@@ -137,7 +137,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=controls
+CMAKE_PROJECT_NAME:STATIC=Project
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -243,10 +243,10 @@ _CATKIN_GTEST_SRC:FILEPATH=/usr/src/gtest/src/gtest.cc
 catkin_DIR:PATH=/opt/ros/indigo/share/catkin/cmake
 
 //Value Computed by CMake
-controls_BINARY_DIR:STATIC=/home/debian/controls_on_beagle_bone/main_controls/build
+controls_BINARY_DIR:STATIC=/home/debian/controls_on_beagle_bone/main_controls/build/controls
 
 //Value Computed by CMake
-controls_SOURCE_DIR:STATIC=/home/debian/controls_on_beagle_bone/main_controls/src
+controls_SOURCE_DIR:STATIC=/home/debian/controls_on_beagle_bone/main_controls/src/controls
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/home/debian/ros_catkin_ws/install_isolated/share/cpp_common/cmake
@@ -451,7 +451,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=2
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

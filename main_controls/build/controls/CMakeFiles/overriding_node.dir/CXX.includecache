@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackCore.cpp
+BlackCore.h
+/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackCore.h
+
 /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackCore.h
 BlackErr.h
 /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackErr.h
@@ -28,12 +32,30 @@ string
 
 /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackErr.h
 
+/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackGPIO.cpp
+BlackGPIO.h
+/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackGPIO.h
+
 /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackGPIO.h
 BlackCore.h
 /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackCore.h
 fstream
 -
 string
+-
+
+/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackPWM.cpp
+BlackPWM.h
+/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackPWM.h
+
+/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackPWM.h
+BlackCore.h
+/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackCore.h
+iostream
+-
+fstream
+-
+cmath
 -
 
 /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/overriding_layer.cpp

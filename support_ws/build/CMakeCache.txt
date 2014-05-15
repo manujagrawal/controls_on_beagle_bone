@@ -26,6 +26,9 @@ CATKIN_DEVEL_PREFIX:PATH=/home/debian/controls_on_beagle_bone/support_ws/devel
 //Catkin enable testing
 CATKIN_ENABLE_TESTING:BOOL=ON
 
+//Prefix to apply to package generated via gendebian
+CATKIN_PACKAGE_PREFIX:STRING=
+
 //Catkin skip testing
 CATKIN_SKIP_TESTING:BOOL=OFF
 
@@ -297,6 +300,12 @@ lib:FILEPATH=/home/debian/ros_catkin_ws/install_isolated/lib/libxmlrpcpp.so
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/home/debian/ros_catkin_ws/install_isolated/share/message_runtime/cmake
 
+//Value Computed by CMake
+roboteq_BINARY_DIR:STATIC=/home/debian/controls_on_beagle_bone/support_ws/build
+
+//Value Computed by CMake
+roboteq_SOURCE_DIR:STATIC=/home/debian/controls_on_beagle_bone/support_ws/src
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/home/debian/ros_catkin_ws/install_isolated/share/rosconsole/cmake
 
@@ -311,6 +320,9 @@ roscpp_traits_DIR:PATH=/home/debian/ros_catkin_ws/install_isolated/share/roscpp_
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/home/debian/ros_catkin_ws/install_isolated/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for rospy.
+rospy_DIR:PATH=/home/debian/ros_catkin_ws/install_isolated/share/rospy/cmake
 
 //The directory containing a CMake configuration file for rostest.
 rostest_DIR:PATH=/home/debian/ros_catkin_ws/install_isolated/share/rostest/cmake

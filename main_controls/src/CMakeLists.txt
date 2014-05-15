@@ -1,58 +1,63 @@
+# toplevel CMakeLists.txt for a catkin workspace
+# catkin/cmake/toplevel.cmake
+
 cmake_minimum_required(VERSION 2.8.3)
 
-project(controls)
+set(CATKIN_TOPLEVEL TRUE)
 
-ADD_DEFINITIONS(-std=c++0x)
-
-
-## Find catkin and any catkin packages
-find_package(catkin REQUIRED COMPONENTS 
-	roscpp 
-	rospy 
-	std_msgs 
-	sensor_msgs 
-	genmsg 
-	message_generation 
-	joy
-	diagnostic_updater
+# search for catkin within the workspace
+set(_cmd "catkin_find_pkg" "catkin" "${CMAKE_SOURCE_DIR}")
+execute_process(COMMAND ${_cmd}
+  RESULT_VARIABLE _res
+  OUTPUT_VARIABLE _out
+  ERROR_VARIABLE _err
+  OUTPUT_STRIP_TRAILING_WHITESPACE
+  ERROR_STRIP_TRAILING_WHITESPACE
 )
+if(NOT _res EQUAL 0 AND NOT _res EQUAL 2)
+  # searching fot catkin resulted in an error
+  string(REPLACE ";" " " _cmd_str "${_cmd}")
+  message(FATAL_ERROR "Search for 'catkin' in workspace failed (${_cmd_str}): ${_err}")
+endif()
 
-## Declare ROS messages and services
-add_message_files(FILES encoder_msg.msg)
+# include catkin from workspace or via find_package()
+if(_res EQUAL 0)
+  set(catkin_EXTRAS_DIR "${CMAKE_SOURCE_DIR}/${_out}/cmake")
+  # include all.cmake without add_subdirectory to let it operate in same scope
+  include(${catkin_EXTRAS_DIR}/all.cmake NO_POLICY_SCOPE)
+  add_subdirectory("${_out}")
 
-## Generate added messages and services
-generate_messages(DEPENDENCIES std_msgs)
+else()
+  # use either CMAKE_PREFIX_PATH explicitly passed to CMake as a command line argument
+  # or CMAKE_PREFIX_PATH from the environment
+  if(NOT DEFINED CMAKE_PREFIX_PATH)
+    if(NOT "$ENV{CMAKE_PREFIX_PATH}" STREQUAL "")
+      string(REPLACE ":" ";" CMAKE_PREFIX_PATH $ENV{CMAKE_PREFIX_PATH})
+    endif()
+  endif()
 
-## Declare a catkin package
-catkin_package(CATKIN_DEPENDS roscpp joy rospy geometry_msgs sensor_msgs std_msgs diagnostic_updater joy message_runtime)
+  # list of catkin workspaces
+  set(catkin_search_path "")
+  foreach(path ${CMAKE_PREFIX_PATH})
+    if(EXISTS "${path}/.catkin")
+      list(FIND catkin_search_path ${path} _index)
+      if(_index EQUAL -1)
+        list(APPEND catkin_search_path ${path})
+      endif()
+    endif()
+  endforeach()
 
+  # search for catkin in all workspaces
+  set(CATKIN_TOPLEVEL_FIND_PACKAGE TRUE)
+  find_package(catkin QUIET
+    NO_POLICY_SCOPE
+    PATHS ${catkin_search_path}
+    NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+  unset(CATKIN_TOPLEVEL_FIND_PACKAGE)
 
-## Build talker and listener
-include_directories(
-	${catkin_INCLUDE_DIRS}
-	${roscpp_INCLUDE_DIRS}
-	${rospy_INCLUDE_DIRS}
-)
+  if(NOT catkin_FOUND)
+    message(FATAL_ERROR "find_package(catkin) failed. catkin was neither found in the workspace nor in the CMAKE_PREFIX_PATH. One reason may be that no ROS setup.sh was sourced before.")
+  endif()
+endif()
 
-add_executable(encoders src/encoders.cpp src/eqep.cpp)
-target_link_libraries(encoders ${catkin_LIBRARIES})
-add_dependencies(encoders roscpp std_msgs geometry_msgs )
-
-add_executable(test_encoders src/test_encoder.cpp)
-target_link_libraries(test_encoders ${catkin_LIBRARIES})
-
-add_executable(overriding_node src/overriding_layer.cpp src/BlackGPIO.cpp  src/BlackCore.cpp src/BlackPWM.cpp)
-target_link_libraries(overriding_node ${catkin_LIBRARIES} ) 
-add_dependencies(overriding_node roscpp rospy joy sensor_msgs std_msgs geometry_msgs diagnostic_updater)
-
-add_executable(wpid_node src/W_PID.cpp )
-target_link_libraries(wpid_node ${catkin_LIBRARIES})
-add_dependencies(wpid_node roscpp std_msgs geometry_msgs)
-
-add_executable(vspid_node src/vs_pid.cpp src/BlackCore.cpp src/BlackPWM.cpp)
-target_link_libraries(vspid_node ${catkin_LIBRARIES})
-add_dependencies(vspid_node roscpp std_msgs geometry_msgs)
-
-
-
-
+catkin_workspace()

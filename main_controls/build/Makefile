@@ -150,19 +150,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named _controls_generate_messages_check_deps_encoder_msg
-
-# Build rule for target.
-_controls_generate_messages_check_deps_encoder_msg: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _controls_generate_messages_check_deps_encoder_msg
-.PHONY : _controls_generate_messages_check_deps_encoder_msg
-
-# fast build rule for target.
-_controls_generate_messages_check_deps_encoder_msg/fast:
-	$(MAKE) -f CMakeFiles/_controls_generate_messages_check_deps_encoder_msg.dir/build.make CMakeFiles/_controls_generate_messages_check_deps_encoder_msg.dir/build
-.PHONY : _controls_generate_messages_check_deps_encoder_msg/fast
-
-#=============================================================================
 # Target rules for targets named clean_test_results
 
 # Build rule for target.
@@ -174,136 +161,6 @@ clean_test_results: cmake_check_build_system
 clean_test_results/fast:
 	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
 .PHONY : clean_test_results/fast
-
-#=============================================================================
-# Target rules for targets named controls_gencpp
-
-# Build rule for target.
-controls_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controls_gencpp
-.PHONY : controls_gencpp
-
-# fast build rule for target.
-controls_gencpp/fast:
-	$(MAKE) -f CMakeFiles/controls_gencpp.dir/build.make CMakeFiles/controls_gencpp.dir/build
-.PHONY : controls_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named controls_generate_messages
-
-# Build rule for target.
-controls_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controls_generate_messages
-.PHONY : controls_generate_messages
-
-# fast build rule for target.
-controls_generate_messages/fast:
-	$(MAKE) -f CMakeFiles/controls_generate_messages.dir/build.make CMakeFiles/controls_generate_messages.dir/build
-.PHONY : controls_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named controls_generate_messages_cpp
-
-# Build rule for target.
-controls_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controls_generate_messages_cpp
-.PHONY : controls_generate_messages_cpp
-
-# fast build rule for target.
-controls_generate_messages_cpp/fast:
-	$(MAKE) -f CMakeFiles/controls_generate_messages_cpp.dir/build.make CMakeFiles/controls_generate_messages_cpp.dir/build
-.PHONY : controls_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named controls_generate_messages_lisp
-
-# Build rule for target.
-controls_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controls_generate_messages_lisp
-.PHONY : controls_generate_messages_lisp
-
-# fast build rule for target.
-controls_generate_messages_lisp/fast:
-	$(MAKE) -f CMakeFiles/controls_generate_messages_lisp.dir/build.make CMakeFiles/controls_generate_messages_lisp.dir/build
-.PHONY : controls_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named controls_generate_messages_py
-
-# Build rule for target.
-controls_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controls_generate_messages_py
-.PHONY : controls_generate_messages_py
-
-# fast build rule for target.
-controls_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/controls_generate_messages_py.dir/build.make CMakeFiles/controls_generate_messages_py.dir/build
-.PHONY : controls_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named controls_genlisp
-
-# Build rule for target.
-controls_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controls_genlisp
-.PHONY : controls_genlisp
-
-# fast build rule for target.
-controls_genlisp/fast:
-	$(MAKE) -f CMakeFiles/controls_genlisp.dir/build.make CMakeFiles/controls_genlisp.dir/build
-.PHONY : controls_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named controls_genpy
-
-# Build rule for target.
-controls_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 controls_genpy
-.PHONY : controls_genpy
-
-# fast build rule for target.
-controls_genpy/fast:
-	$(MAKE) -f CMakeFiles/controls_genpy.dir/build.make CMakeFiles/controls_genpy.dir/build
-.PHONY : controls_genpy/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_cpp
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_cpp
-.PHONY : diagnostic_msgs_generate_messages_cpp
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
-.PHONY : diagnostic_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_lisp
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_lisp
-.PHONY : diagnostic_msgs_generate_messages_lisp
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
-.PHONY : diagnostic_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named diagnostic_msgs_generate_messages_py
-
-# Build rule for target.
-diagnostic_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_py
-.PHONY : diagnostic_msgs_generate_messages_py
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
-.PHONY : diagnostic_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named doxygen
@@ -319,149 +176,6 @@ doxygen/fast:
 .PHONY : doxygen/fast
 
 #=============================================================================
-# Target rules for targets named encoders
-
-# Build rule for target.
-encoders: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 encoders
-.PHONY : encoders
-
-# fast build rule for target.
-encoders/fast:
-	$(MAKE) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/build
-.PHONY : encoders/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_cpp
-
-# Build rule for target.
-geometry_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_lisp
-
-# Build rule for target.
-geometry_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named geometry_msgs_generate_messages_py
-
-# Build rule for target.
-geometry_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
-.PHONY : geometry_msgs_generate_messages_py
-
-# fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named overriding_node
-
-# Build rule for target.
-overriding_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 overriding_node
-.PHONY : overriding_node
-
-# fast build rule for target.
-overriding_node/fast:
-	$(MAKE) -f CMakeFiles/overriding_node.dir/build.make CMakeFiles/overriding_node.dir/build
-.PHONY : overriding_node/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_cpp
-
-# Build rule for target.
-roscpp_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
-.PHONY : roscpp_generate_messages_cpp
-
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_lisp
-
-# Build rule for target.
-roscpp_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_py
-
-# Build rule for target.
-roscpp_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_cpp
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_lisp
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_py
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-#=============================================================================
 # Target rules for targets named run_tests
 
 # Build rule for target.
@@ -475,97 +189,6 @@ run_tests/fast:
 .PHONY : run_tests/fast
 
 #=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_cpp
-
-# Build rule for target.
-sensor_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
-.PHONY : sensor_msgs_generate_messages_cpp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
-.PHONY : sensor_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_lisp
-
-# Build rule for target.
-sensor_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
-.PHONY : sensor_msgs_generate_messages_lisp
-
-# fast build rule for target.
-sensor_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
-.PHONY : sensor_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_py
-
-# Build rule for target.
-sensor_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
-.PHONY : sensor_msgs_generate_messages_py
-
-# fast build rule for target.
-sensor_msgs_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make CMakeFiles/sensor_msgs_generate_messages_py.dir/build
-.PHONY : sensor_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_cpp
-
-# Build rule for target.
-std_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_lisp
-
-# Build rule for target.
-std_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_py
-
-# Build rule for target.
-std_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named test_encoders
-
-# Build rule for target.
-test_encoders: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_encoders
-.PHONY : test_encoders
-
-# fast build rule for target.
-test_encoders/fast:
-	$(MAKE) -f CMakeFiles/test_encoders.dir/build.make CMakeFiles/test_encoders.dir/build
-.PHONY : test_encoders/fast
-
-#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -577,32 +200,6 @@ tests: cmake_check_build_system
 tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
-
-#=============================================================================
-# Target rules for targets named vspid_node
-
-# Build rule for target.
-vspid_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vspid_node
-.PHONY : vspid_node
-
-# fast build rule for target.
-vspid_node/fast:
-	$(MAKE) -f CMakeFiles/vspid_node.dir/build.make CMakeFiles/vspid_node.dir/build
-.PHONY : vspid_node/fast
-
-#=============================================================================
-# Target rules for targets named wpid_node
-
-# Build rule for target.
-wpid_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 wpid_node
-.PHONY : wpid_node
-
-# fast build rule for target.
-wpid_node/fast:
-	$(MAKE) -f CMakeFiles/wpid_node.dir/build.make CMakeFiles/wpid_node.dir/build
-.PHONY : wpid_node/fast
 
 #=============================================================================
 # Target rules for targets named gtest
@@ -630,227 +227,408 @@ gtest_main/fast:
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-src/BlackCore.o: src/BlackCore.cpp.o
-.PHONY : src/BlackCore.o
+#=============================================================================
+# Target rules for targets named _controls_generate_messages_check_deps_encoder_msg
 
-# target to build an object file
-src/BlackCore.cpp.o:
-	$(MAKE) -f CMakeFiles/overriding_node.dir/build.make CMakeFiles/overriding_node.dir/src/BlackCore.cpp.o
-	$(MAKE) -f CMakeFiles/vspid_node.dir/build.make CMakeFiles/vspid_node.dir/src/BlackCore.cpp.o
-.PHONY : src/BlackCore.cpp.o
+# Build rule for target.
+_controls_generate_messages_check_deps_encoder_msg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _controls_generate_messages_check_deps_encoder_msg
+.PHONY : _controls_generate_messages_check_deps_encoder_msg
 
-src/BlackCore.i: src/BlackCore.cpp.i
-.PHONY : src/BlackCore.i
+# fast build rule for target.
+_controls_generate_messages_check_deps_encoder_msg/fast:
+	$(MAKE) -f controls/CMakeFiles/_controls_generate_messages_check_deps_encoder_msg.dir/build.make controls/CMakeFiles/_controls_generate_messages_check_deps_encoder_msg.dir/build
+.PHONY : _controls_generate_messages_check_deps_encoder_msg/fast
 
-# target to preprocess a source file
-src/BlackCore.cpp.i:
-	$(MAKE) -f CMakeFiles/overriding_node.dir/build.make CMakeFiles/overriding_node.dir/src/BlackCore.cpp.i
-	$(MAKE) -f CMakeFiles/vspid_node.dir/build.make CMakeFiles/vspid_node.dir/src/BlackCore.cpp.i
-.PHONY : src/BlackCore.cpp.i
+#=============================================================================
+# Target rules for targets named controls_gencpp
 
-src/BlackCore.s: src/BlackCore.cpp.s
-.PHONY : src/BlackCore.s
+# Build rule for target.
+controls_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controls_gencpp
+.PHONY : controls_gencpp
 
-# target to generate assembly for a file
-src/BlackCore.cpp.s:
-	$(MAKE) -f CMakeFiles/overriding_node.dir/build.make CMakeFiles/overriding_node.dir/src/BlackCore.cpp.s
-	$(MAKE) -f CMakeFiles/vspid_node.dir/build.make CMakeFiles/vspid_node.dir/src/BlackCore.cpp.s
-.PHONY : src/BlackCore.cpp.s
+# fast build rule for target.
+controls_gencpp/fast:
+	$(MAKE) -f controls/CMakeFiles/controls_gencpp.dir/build.make controls/CMakeFiles/controls_gencpp.dir/build
+.PHONY : controls_gencpp/fast
 
-src/BlackGPIO.o: src/BlackGPIO.cpp.o
-.PHONY : src/BlackGPIO.o
+#=============================================================================
+# Target rules for targets named controls_generate_messages
 
-# target to build an object file
-src/BlackGPIO.cpp.o:
-	$(MAKE) -f CMakeFiles/overriding_node.dir/build.make CMakeFiles/overriding_node.dir/src/BlackGPIO.cpp.o
-.PHONY : src/BlackGPIO.cpp.o
+# Build rule for target.
+controls_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controls_generate_messages
+.PHONY : controls_generate_messages
 
-src/BlackGPIO.i: src/BlackGPIO.cpp.i
-.PHONY : src/BlackGPIO.i
+# fast build rule for target.
+controls_generate_messages/fast:
+	$(MAKE) -f controls/CMakeFiles/controls_generate_messages.dir/build.make controls/CMakeFiles/controls_generate_messages.dir/build
+.PHONY : controls_generate_messages/fast
 
-# target to preprocess a source file
-src/BlackGPIO.cpp.i:
-	$(MAKE) -f CMakeFiles/overriding_node.dir/build.make CMakeFiles/overriding_node.dir/src/BlackGPIO.cpp.i
-.PHONY : src/BlackGPIO.cpp.i
+#=============================================================================
+# Target rules for targets named controls_generate_messages_cpp
 
-src/BlackGPIO.s: src/BlackGPIO.cpp.s
-.PHONY : src/BlackGPIO.s
+# Build rule for target.
+controls_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controls_generate_messages_cpp
+.PHONY : controls_generate_messages_cpp
 
-# target to generate assembly for a file
-src/BlackGPIO.cpp.s:
-	$(MAKE) -f CMakeFiles/overriding_node.dir/build.make CMakeFiles/overriding_node.dir/src/BlackGPIO.cpp.s
-.PHONY : src/BlackGPIO.cpp.s
+# fast build rule for target.
+controls_generate_messages_cpp/fast:
+	$(MAKE) -f controls/CMakeFiles/controls_generate_messages_cpp.dir/build.make controls/CMakeFiles/controls_generate_messages_cpp.dir/build
+.PHONY : controls_generate_messages_cpp/fast
 
-src/BlackPWM.o: src/BlackPWM.cpp.o
-.PHONY : src/BlackPWM.o
+#=============================================================================
+# Target rules for targets named controls_generate_messages_lisp
 
-# target to build an object file
-src/BlackPWM.cpp.o:
-	$(MAKE) -f CMakeFiles/overriding_node.dir/build.make CMakeFiles/overriding_node.dir/src/BlackPWM.cpp.o
-	$(MAKE) -f CMakeFiles/vspid_node.dir/build.make CMakeFiles/vspid_node.dir/src/BlackPWM.cpp.o
-.PHONY : src/BlackPWM.cpp.o
+# Build rule for target.
+controls_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controls_generate_messages_lisp
+.PHONY : controls_generate_messages_lisp
 
-src/BlackPWM.i: src/BlackPWM.cpp.i
-.PHONY : src/BlackPWM.i
+# fast build rule for target.
+controls_generate_messages_lisp/fast:
+	$(MAKE) -f controls/CMakeFiles/controls_generate_messages_lisp.dir/build.make controls/CMakeFiles/controls_generate_messages_lisp.dir/build
+.PHONY : controls_generate_messages_lisp/fast
 
-# target to preprocess a source file
-src/BlackPWM.cpp.i:
-	$(MAKE) -f CMakeFiles/overriding_node.dir/build.make CMakeFiles/overriding_node.dir/src/BlackPWM.cpp.i
-	$(MAKE) -f CMakeFiles/vspid_node.dir/build.make CMakeFiles/vspid_node.dir/src/BlackPWM.cpp.i
-.PHONY : src/BlackPWM.cpp.i
+#=============================================================================
+# Target rules for targets named controls_generate_messages_py
 
-src/BlackPWM.s: src/BlackPWM.cpp.s
-.PHONY : src/BlackPWM.s
+# Build rule for target.
+controls_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controls_generate_messages_py
+.PHONY : controls_generate_messages_py
 
-# target to generate assembly for a file
-src/BlackPWM.cpp.s:
-	$(MAKE) -f CMakeFiles/overriding_node.dir/build.make CMakeFiles/overriding_node.dir/src/BlackPWM.cpp.s
-	$(MAKE) -f CMakeFiles/vspid_node.dir/build.make CMakeFiles/vspid_node.dir/src/BlackPWM.cpp.s
-.PHONY : src/BlackPWM.cpp.s
+# fast build rule for target.
+controls_generate_messages_py/fast:
+	$(MAKE) -f controls/CMakeFiles/controls_generate_messages_py.dir/build.make controls/CMakeFiles/controls_generate_messages_py.dir/build
+.PHONY : controls_generate_messages_py/fast
 
-src/W_PID.o: src/W_PID.cpp.o
-.PHONY : src/W_PID.o
+#=============================================================================
+# Target rules for targets named controls_genlisp
 
-# target to build an object file
-src/W_PID.cpp.o:
-	$(MAKE) -f CMakeFiles/wpid_node.dir/build.make CMakeFiles/wpid_node.dir/src/W_PID.cpp.o
-.PHONY : src/W_PID.cpp.o
+# Build rule for target.
+controls_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controls_genlisp
+.PHONY : controls_genlisp
 
-src/W_PID.i: src/W_PID.cpp.i
-.PHONY : src/W_PID.i
+# fast build rule for target.
+controls_genlisp/fast:
+	$(MAKE) -f controls/CMakeFiles/controls_genlisp.dir/build.make controls/CMakeFiles/controls_genlisp.dir/build
+.PHONY : controls_genlisp/fast
 
-# target to preprocess a source file
-src/W_PID.cpp.i:
-	$(MAKE) -f CMakeFiles/wpid_node.dir/build.make CMakeFiles/wpid_node.dir/src/W_PID.cpp.i
-.PHONY : src/W_PID.cpp.i
+#=============================================================================
+# Target rules for targets named controls_genpy
 
-src/W_PID.s: src/W_PID.cpp.s
-.PHONY : src/W_PID.s
+# Build rule for target.
+controls_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controls_genpy
+.PHONY : controls_genpy
 
-# target to generate assembly for a file
-src/W_PID.cpp.s:
-	$(MAKE) -f CMakeFiles/wpid_node.dir/build.make CMakeFiles/wpid_node.dir/src/W_PID.cpp.s
-.PHONY : src/W_PID.cpp.s
+# fast build rule for target.
+controls_genpy/fast:
+	$(MAKE) -f controls/CMakeFiles/controls_genpy.dir/build.make controls/CMakeFiles/controls_genpy.dir/build
+.PHONY : controls_genpy/fast
 
-src/encoders.o: src/encoders.cpp.o
-.PHONY : src/encoders.o
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_cpp
 
-# target to build an object file
-src/encoders.cpp.o:
-	$(MAKE) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/src/encoders.cpp.o
-.PHONY : src/encoders.cpp.o
+# Build rule for target.
+diagnostic_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_cpp
+.PHONY : diagnostic_msgs_generate_messages_cpp
 
-src/encoders.i: src/encoders.cpp.i
-.PHONY : src/encoders.i
+# fast build rule for target.
+diagnostic_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f controls/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build.make controls/CMakeFiles/diagnostic_msgs_generate_messages_cpp.dir/build
+.PHONY : diagnostic_msgs_generate_messages_cpp/fast
 
-# target to preprocess a source file
-src/encoders.cpp.i:
-	$(MAKE) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/src/encoders.cpp.i
-.PHONY : src/encoders.cpp.i
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_lisp
 
-src/encoders.s: src/encoders.cpp.s
-.PHONY : src/encoders.s
+# Build rule for target.
+diagnostic_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_lisp
+.PHONY : diagnostic_msgs_generate_messages_lisp
 
-# target to generate assembly for a file
-src/encoders.cpp.s:
-	$(MAKE) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/src/encoders.cpp.s
-.PHONY : src/encoders.cpp.s
+# fast build rule for target.
+diagnostic_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f controls/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make controls/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
+.PHONY : diagnostic_msgs_generate_messages_lisp/fast
 
-src/eqep.o: src/eqep.cpp.o
-.PHONY : src/eqep.o
+#=============================================================================
+# Target rules for targets named diagnostic_msgs_generate_messages_py
 
-# target to build an object file
-src/eqep.cpp.o:
-	$(MAKE) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/src/eqep.cpp.o
-.PHONY : src/eqep.cpp.o
+# Build rule for target.
+diagnostic_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 diagnostic_msgs_generate_messages_py
+.PHONY : diagnostic_msgs_generate_messages_py
 
-src/eqep.i: src/eqep.cpp.i
-.PHONY : src/eqep.i
+# fast build rule for target.
+diagnostic_msgs_generate_messages_py/fast:
+	$(MAKE) -f controls/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build.make controls/CMakeFiles/diagnostic_msgs_generate_messages_py.dir/build
+.PHONY : diagnostic_msgs_generate_messages_py/fast
 
-# target to preprocess a source file
-src/eqep.cpp.i:
-	$(MAKE) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/src/eqep.cpp.i
-.PHONY : src/eqep.cpp.i
+#=============================================================================
+# Target rules for targets named encoders
 
-src/eqep.s: src/eqep.cpp.s
-.PHONY : src/eqep.s
+# Build rule for target.
+encoders: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 encoders
+.PHONY : encoders
 
-# target to generate assembly for a file
-src/eqep.cpp.s:
-	$(MAKE) -f CMakeFiles/encoders.dir/build.make CMakeFiles/encoders.dir/src/eqep.cpp.s
-.PHONY : src/eqep.cpp.s
+# fast build rule for target.
+encoders/fast:
+	$(MAKE) -f controls/CMakeFiles/encoders.dir/build.make controls/CMakeFiles/encoders.dir/build
+.PHONY : encoders/fast
 
-src/overriding_layer.o: src/overriding_layer.cpp.o
-.PHONY : src/overriding_layer.o
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_cpp
 
-# target to build an object file
-src/overriding_layer.cpp.o:
-	$(MAKE) -f CMakeFiles/overriding_node.dir/build.make CMakeFiles/overriding_node.dir/src/overriding_layer.cpp.o
-.PHONY : src/overriding_layer.cpp.o
+# Build rule for target.
+geometry_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_cpp
+.PHONY : geometry_msgs_generate_messages_cpp
 
-src/overriding_layer.i: src/overriding_layer.cpp.i
-.PHONY : src/overriding_layer.i
+# fast build rule for target.
+geometry_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f controls/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make controls/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+.PHONY : geometry_msgs_generate_messages_cpp/fast
 
-# target to preprocess a source file
-src/overriding_layer.cpp.i:
-	$(MAKE) -f CMakeFiles/overriding_node.dir/build.make CMakeFiles/overriding_node.dir/src/overriding_layer.cpp.i
-.PHONY : src/overriding_layer.cpp.i
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_lisp
 
-src/overriding_layer.s: src/overriding_layer.cpp.s
-.PHONY : src/overriding_layer.s
+# Build rule for target.
+geometry_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_lisp
+.PHONY : geometry_msgs_generate_messages_lisp
 
-# target to generate assembly for a file
-src/overriding_layer.cpp.s:
-	$(MAKE) -f CMakeFiles/overriding_node.dir/build.make CMakeFiles/overriding_node.dir/src/overriding_layer.cpp.s
-.PHONY : src/overriding_layer.cpp.s
+# fast build rule for target.
+geometry_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f controls/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make controls/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+.PHONY : geometry_msgs_generate_messages_lisp/fast
 
-src/test_encoder.o: src/test_encoder.cpp.o
-.PHONY : src/test_encoder.o
+#=============================================================================
+# Target rules for targets named geometry_msgs_generate_messages_py
 
-# target to build an object file
-src/test_encoder.cpp.o:
-	$(MAKE) -f CMakeFiles/test_encoders.dir/build.make CMakeFiles/test_encoders.dir/src/test_encoder.cpp.o
-.PHONY : src/test_encoder.cpp.o
+# Build rule for target.
+geometry_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry_msgs_generate_messages_py
+.PHONY : geometry_msgs_generate_messages_py
 
-src/test_encoder.i: src/test_encoder.cpp.i
-.PHONY : src/test_encoder.i
+# fast build rule for target.
+geometry_msgs_generate_messages_py/fast:
+	$(MAKE) -f controls/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make controls/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+.PHONY : geometry_msgs_generate_messages_py/fast
 
-# target to preprocess a source file
-src/test_encoder.cpp.i:
-	$(MAKE) -f CMakeFiles/test_encoders.dir/build.make CMakeFiles/test_encoders.dir/src/test_encoder.cpp.i
-.PHONY : src/test_encoder.cpp.i
+#=============================================================================
+# Target rules for targets named overriding_node
 
-src/test_encoder.s: src/test_encoder.cpp.s
-.PHONY : src/test_encoder.s
+# Build rule for target.
+overriding_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 overriding_node
+.PHONY : overriding_node
 
-# target to generate assembly for a file
-src/test_encoder.cpp.s:
-	$(MAKE) -f CMakeFiles/test_encoders.dir/build.make CMakeFiles/test_encoders.dir/src/test_encoder.cpp.s
-.PHONY : src/test_encoder.cpp.s
+# fast build rule for target.
+overriding_node/fast:
+	$(MAKE) -f controls/CMakeFiles/overriding_node.dir/build.make controls/CMakeFiles/overriding_node.dir/build
+.PHONY : overriding_node/fast
 
-src/vs_pid.o: src/vs_pid.cpp.o
-.PHONY : src/vs_pid.o
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
 
-# target to build an object file
-src/vs_pid.cpp.o:
-	$(MAKE) -f CMakeFiles/vspid_node.dir/build.make CMakeFiles/vspid_node.dir/src/vs_pid.cpp.o
-.PHONY : src/vs_pid.cpp.o
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
 
-src/vs_pid.i: src/vs_pid.cpp.i
-.PHONY : src/vs_pid.i
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f controls/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make controls/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
 
-# target to preprocess a source file
-src/vs_pid.cpp.i:
-	$(MAKE) -f CMakeFiles/vspid_node.dir/build.make CMakeFiles/vspid_node.dir/src/vs_pid.cpp.i
-.PHONY : src/vs_pid.cpp.i
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
 
-src/vs_pid.s: src/vs_pid.cpp.s
-.PHONY : src/vs_pid.s
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
 
-# target to generate assembly for a file
-src/vs_pid.cpp.s:
-	$(MAKE) -f CMakeFiles/vspid_node.dir/build.make CMakeFiles/vspid_node.dir/src/vs_pid.cpp.s
-.PHONY : src/vs_pid.cpp.s
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f controls/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make controls/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f controls/CMakeFiles/roscpp_generate_messages_py.dir/build.make controls/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f controls/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make controls/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f controls/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make controls/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) -f controls/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make controls/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_cpp
+
+# Build rule for target.
+sensor_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_cpp
+.PHONY : sensor_msgs_generate_messages_cpp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f controls/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make controls/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+.PHONY : sensor_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_lisp
+
+# Build rule for target.
+sensor_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_lisp
+.PHONY : sensor_msgs_generate_messages_lisp
+
+# fast build rule for target.
+sensor_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f controls/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make controls/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+.PHONY : sensor_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_py
+
+# Build rule for target.
+sensor_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_py
+.PHONY : sensor_msgs_generate_messages_py
+
+# fast build rule for target.
+sensor_msgs_generate_messages_py/fast:
+	$(MAKE) -f controls/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make controls/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+.PHONY : sensor_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f controls/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make controls/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f controls/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make controls/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) -f controls/CMakeFiles/std_msgs_generate_messages_py.dir/build.make controls/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named test_encoders
+
+# Build rule for target.
+test_encoders: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_encoders
+.PHONY : test_encoders
+
+# fast build rule for target.
+test_encoders/fast:
+	$(MAKE) -f controls/CMakeFiles/test_encoders.dir/build.make controls/CMakeFiles/test_encoders.dir/build
+.PHONY : test_encoders/fast
+
+#=============================================================================
+# Target rules for targets named vspid_node
+
+# Build rule for target.
+vspid_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vspid_node
+.PHONY : vspid_node
+
+# fast build rule for target.
+vspid_node/fast:
+	$(MAKE) -f controls/CMakeFiles/vspid_node.dir/build.make controls/CMakeFiles/vspid_node.dir/build
+.PHONY : vspid_node/fast
+
+#=============================================================================
+# Target rules for targets named wpid_node
+
+# Build rule for target.
+wpid_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 wpid_node
+.PHONY : wpid_node
+
+# fast build rule for target.
+wpid_node/fast:
+	$(MAKE) -f controls/CMakeFiles/wpid_node.dir/build.make controls/CMakeFiles/wpid_node.dir/build
+.PHONY : wpid_node/fast
 
 # Help Target
 help:
@@ -858,8 +636,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... _controls_generate_messages_check_deps_encoder_msg"
 	@echo "... clean_test_results"
+	@echo "... doxygen"
+	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
+	@echo "... rebuild_cache"
+	@echo "... run_tests"
+	@echo "... test"
+	@echo "... tests"
+	@echo "... gtest"
+	@echo "... gtest_main"
+	@echo "... _controls_generate_messages_check_deps_encoder_msg"
 	@echo "... controls_gencpp"
 	@echo "... controls_generate_messages"
 	@echo "... controls_generate_messages_cpp"
@@ -870,65 +660,26 @@ help:
 	@echo "... diagnostic_msgs_generate_messages_cpp"
 	@echo "... diagnostic_msgs_generate_messages_lisp"
 	@echo "... diagnostic_msgs_generate_messages_py"
-	@echo "... doxygen"
-	@echo "... edit_cache"
 	@echo "... encoders"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_lisp"
 	@echo "... geometry_msgs_generate_messages_py"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... overriding_node"
-	@echo "... rebuild_cache"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... run_tests"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... test"
 	@echo "... test_encoders"
-	@echo "... tests"
 	@echo "... vspid_node"
 	@echo "... wpid_node"
-	@echo "... gtest"
-	@echo "... gtest_main"
-	@echo "... src/BlackCore.o"
-	@echo "... src/BlackCore.i"
-	@echo "... src/BlackCore.s"
-	@echo "... src/BlackGPIO.o"
-	@echo "... src/BlackGPIO.i"
-	@echo "... src/BlackGPIO.s"
-	@echo "... src/BlackPWM.o"
-	@echo "... src/BlackPWM.i"
-	@echo "... src/BlackPWM.s"
-	@echo "... src/W_PID.o"
-	@echo "... src/W_PID.i"
-	@echo "... src/W_PID.s"
-	@echo "... src/encoders.o"
-	@echo "... src/encoders.i"
-	@echo "... src/encoders.s"
-	@echo "... src/eqep.o"
-	@echo "... src/eqep.i"
-	@echo "... src/eqep.s"
-	@echo "... src/overriding_layer.o"
-	@echo "... src/overriding_layer.i"
-	@echo "... src/overriding_layer.s"
-	@echo "... src/test_encoder.o"
-	@echo "... src/test_encoder.i"
-	@echo "... src/test_encoder.s"
-	@echo "... src/vs_pid.o"
-	@echo "... src/vs_pid.i"
-	@echo "... src/vs_pid.s"
 .PHONY : help
 
 
