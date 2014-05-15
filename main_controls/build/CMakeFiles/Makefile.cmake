@@ -210,6 +210,6 @@ SET(CMAKE_DEPEND_INFO_FILES
   "controls/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "controls/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake"
   "controls/CMakeFiles/test_encoders.dir/DependInfo.cmake"
-  "controls/CMakeFiles/vspid_node.dir/DependInfo.cmake"
+  "controls/CMakeFiles/vxpid_node.dir/DependInfo.cmake"
   "controls/CMakeFiles/wpid_node.dir/DependInfo.cmake"
   )

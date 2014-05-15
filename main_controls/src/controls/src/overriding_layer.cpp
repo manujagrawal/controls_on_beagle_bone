@@ -1,43 +1,25 @@
-#include <ros/ros.h>
-#include <unistd.h>
-#include <mutex>
-#include <sensor_msgs/Joy.h>
-#include <std_msgs/Float64.h>
-#include <std_msgs/Float32.h>
-#include <geometry_msgs/Twist.h>
-#include "BlackGPIO.h"
+
 #include <iostream>
+#include "overriding_layer.h"
+
 
 using namespace ros;
-
-double d;//distance between steering and the back tires in meters
-float MULTI_FACTOR;//to convert -32767 to 32767 to -500 to 500
-#define RAD_FACTOR 318.47
-
-double maxalpha,minalpha;
-using namespace std; 
 using namespace BlackLib;
 
-mutex Vx_Xbox_lock , W_Xbox_lock , Vx_planner_lock , W_planner_lock , xbox_flag_lock , planner_flag_lock;
 
-float normalized;
+OverridingLayer::OverridingLayer() :
+	finaltwist(), Vx_Xbox_lock() , W_Xbox_lock() , Vx_planner_lock() , W_planner_lock() , xbox_flag_lock() , planner_flag_lock()
+{
 
-float W_xbox;
-float Vx_Xbox;
-double Max_Xbox_Vx;
+	estopflag=0; //flag to tell whether estop is currently enabled
+	xboxflag=0; //flag to tell whether xbox is currently sending data or not
+	planflag=0;
+	
+	MULTI_FACTOR=((maxalpha-minalpha)*100/18)*0.756;
+	
+}
 
-
-float W_Planner;
-float Vx_Planner;
-
- //node handler for xbox data
-int estopflag=0; //flag to tell whether estop is currently enabled
-int xboxflag=0; //flag to tell whether xbox is currently sending data or not
-int planflag=0;
-
-BlackGPIO E_stop_enable(GPIO_31 , output);
-
-void joyCallback(const sensor_msgs::Joy::ConstPtr& joy) //main callback function for xbox data
+void OverridingLayer::joyCallback(const sensor_msgs::Joy::ConstPtr& joy) //main callback function for xbox data
 {
 
   	if ( (joy->axes[5]<1.0)&&(joy->axes[5]>= -1.0) ){
@@ -109,7 +91,9 @@ void joyCallback(const sensor_msgs::Joy::ConstPtr& joy) //main callback function
 		cout<<endl;
 	}
 	
-	if(estopflag==0)
+	BlackGPIO E_stop_enable(GPIO_31 ,output);
+	
+	 if(estopflag==0)
 	{
 		E_stop_enable.setValue(low); //set the pin to low, to disable the e-stop
 	}
@@ -122,7 +106,7 @@ void joyCallback(const sensor_msgs::Joy::ConstPtr& joy) //main callback function
 
 }
 
-void planCallback(const geometry_msgs::Twist::ConstPtr& pose)
+void OverridingLayer::planCallback(const geometry_msgs::Twist::ConstPtr& pose)
 {		
 		xbox_flag_lock.lock();
 		
@@ -142,34 +126,26 @@ void planCallback(const geometry_msgs::Twist::ConstPtr& pose)
 		xbox_flag_lock.unlock();
 }
 
- 
-int main(int argc, char** argv)
-{	
+ void OverridingLayer::publish(int argc, char** argv){
 
-		ros::NodeHandle nh_;
-		ros::Rate loop_rate(10);
-  		ros::Subscriber joy_sub_;
-		ros::Subscriber plan_sub;  
+	ros::init(argc, argv, "overriding_layer");
 	
-  	joy_sub_ = nh_.subscribe <sensor_msgs::Joy> ("joy", 1000 , joyCallback ); 
-  	plan_sub = nh_.subscribe <geometry_msgs::Twist> ("cmd_vel", 1000 , planCallback); 
+	ros::NodeHandle nh_;
+	ros::Rate loop_rate(200);
+	ros::Subscriber joy_sub;
+	ros::Subscriber plan_sub;  
+
+  	joy_sub = nh_.subscribe <sensor_msgs::Joy> ("joy", 1000 , &OverridingLayer::joyCallback , this); 
+  	plan_sub = nh_.subscribe <geometry_msgs::Twist> ("cmd_vel", 1000 , &OverridingLayer::planCallback, this); 
 	nh_.getParam("/overriding_layer/maxvelocity", Max_Xbox_Vx);
 	nh_.getParam("d",d);
 	nh_.getParam("Alpha_Max",maxalpha);
 	nh_.getParam("Alpha_Min",minalpha);
 
-	MULTI_FACTOR=((maxalpha-minalpha)*100/18)*0.756;
+	ros::Publisher send_twist = nh_.advertise<geometry_msgs::Twist>("target_pose", 5);
 
-
-
-	geometry_msgs::Twist finaltwist;
-	
 	while(ros::ok)
 	{
-		ros::init(argc, argv, "overriding_layer");
-		
-		ros::Publisher send_twist = nh_.advertise<geometry_msgs::Twist>("target_pose", 5);
-
 		xbox_flag_lock.lock();
 		
 		planner_flag_lock.lock();
@@ -211,4 +187,16 @@ int main(int argc, char** argv)
 		
 		
 	}
+ }
+ 
+ 
+ 
+int main(int argc, char** argv)
+{	
+
+	OverridingLayer * layer = new OverridingLayer();
+	
+	layer->publish(argc, argv);
+	
+	delete layer;
 }

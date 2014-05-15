@@ -49,37 +49,37 @@ include controls/CMakeFiles/wpid_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include controls/CMakeFiles/wpid_node.dir/flags.make
 
-controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o: controls/CMakeFiles/wpid_node.dir/flags.make
-controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o: /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/W_PID.cpp
+controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o: controls/CMakeFiles/wpid_node.dir/flags.make
+controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o: /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/w_pid.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/debian/controls_on_beagle_bone/main_controls/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o"
-	cd /home/debian/controls_on_beagle_bone/main_controls/build/controls && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/wpid_node.dir/src/W_PID.cpp.o -c /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/W_PID.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o"
+	cd /home/debian/controls_on_beagle_bone/main_controls/build/controls && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/wpid_node.dir/src/w_pid.cpp.o -c /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/w_pid.cpp
 
-controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wpid_node.dir/src/W_PID.cpp.i"
-	cd /home/debian/controls_on_beagle_bone/main_controls/build/controls && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/W_PID.cpp > CMakeFiles/wpid_node.dir/src/W_PID.cpp.i
+controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/wpid_node.dir/src/w_pid.cpp.i"
+	cd /home/debian/controls_on_beagle_bone/main_controls/build/controls && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/w_pid.cpp > CMakeFiles/wpid_node.dir/src/w_pid.cpp.i
 
-controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wpid_node.dir/src/W_PID.cpp.s"
-	cd /home/debian/controls_on_beagle_bone/main_controls/build/controls && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/W_PID.cpp -o CMakeFiles/wpid_node.dir/src/W_PID.cpp.s
+controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/wpid_node.dir/src/w_pid.cpp.s"
+	cd /home/debian/controls_on_beagle_bone/main_controls/build/controls && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/w_pid.cpp -o CMakeFiles/wpid_node.dir/src/w_pid.cpp.s
 
-controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o.requires:
-.PHONY : controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o.requires
+controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o.requires:
+.PHONY : controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o.requires
 
-controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o.provides: controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o.requires
-	$(MAKE) -f controls/CMakeFiles/wpid_node.dir/build.make controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o.provides.build
-.PHONY : controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o.provides
+controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o.provides: controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o.requires
+	$(MAKE) -f controls/CMakeFiles/wpid_node.dir/build.make controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o.provides.build
+.PHONY : controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o.provides
 
-controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o.provides.build: controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o
+controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o.provides.build: controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o
 
 # Object files for target wpid_node
 wpid_node_OBJECTS = \
-"CMakeFiles/wpid_node.dir/src/W_PID.cpp.o"
+"CMakeFiles/wpid_node.dir/src/w_pid.cpp.o"
 
 # External object files for target wpid_node
 wpid_node_EXTERNAL_OBJECTS =
 
-/home/debian/controls_on_beagle_bone/main_controls/devel/lib/controls/wpid_node: controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o
+/home/debian/controls_on_beagle_bone/main_controls/devel/lib/controls/wpid_node: controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o
 /home/debian/controls_on_beagle_bone/main_controls/devel/lib/controls/wpid_node: controls/CMakeFiles/wpid_node.dir/build.make
 /home/debian/controls_on_beagle_bone/main_controls/devel/lib/controls/wpid_node: /home/debian/ros_catkin_ws/install_isolated/lib/libroscpp.so
 /home/debian/controls_on_beagle_bone/main_controls/devel/lib/controls/wpid_node: /usr/lib/libboost_signals-mt.so
@@ -106,7 +106,7 @@ wpid_node_EXTERNAL_OBJECTS =
 controls/CMakeFiles/wpid_node.dir/build: /home/debian/controls_on_beagle_bone/main_controls/devel/lib/controls/wpid_node
 .PHONY : controls/CMakeFiles/wpid_node.dir/build
 
-controls/CMakeFiles/wpid_node.dir/requires: controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o.requires
+controls/CMakeFiles/wpid_node.dir/requires: controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o.requires
 .PHONY : controls/CMakeFiles/wpid_node.dir/requires
 
 controls/CMakeFiles/wpid_node.dir/clean:

@@ -22,10 +22,6 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackCore.cpp
-BlackCore.h
-/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackCore.h
-
 /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackCore.h
 BlackErr.h
 /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackErr.h
@@ -47,10 +43,6 @@ string
 -
 
 /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackErr.h
-
-/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackPWM.cpp
-BlackPWM.h
-/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackPWM.h
 
 /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/BlackPWM.h
 BlackCore.h

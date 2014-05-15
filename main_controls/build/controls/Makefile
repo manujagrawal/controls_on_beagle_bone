@@ -556,18 +556,18 @@ test_encoders/fast:
 .PHONY : test_encoders/fast
 
 # Convenience name for target.
-controls/CMakeFiles/vspid_node.dir/rule:
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f CMakeFiles/Makefile2 controls/CMakeFiles/vspid_node.dir/rule
-.PHONY : controls/CMakeFiles/vspid_node.dir/rule
+controls/CMakeFiles/vxpid_node.dir/rule:
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f CMakeFiles/Makefile2 controls/CMakeFiles/vxpid_node.dir/rule
+.PHONY : controls/CMakeFiles/vxpid_node.dir/rule
 
 # Convenience name for target.
-vspid_node: controls/CMakeFiles/vspid_node.dir/rule
-.PHONY : vspid_node
+vxpid_node: controls/CMakeFiles/vxpid_node.dir/rule
+.PHONY : vxpid_node
 
 # fast build rule for target.
-vspid_node/fast:
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vspid_node.dir/build.make controls/CMakeFiles/vspid_node.dir/build
-.PHONY : vspid_node/fast
+vxpid_node/fast:
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vxpid_node.dir/build.make controls/CMakeFiles/vxpid_node.dir/build
+.PHONY : vxpid_node/fast
 
 # Convenience name for target.
 controls/CMakeFiles/wpid_node.dir/rule:
@@ -589,7 +589,7 @@ src/BlackCore.o: src/BlackCore.cpp.o
 # target to build an object file
 src/BlackCore.cpp.o:
 	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/overriding_node.dir/build.make controls/CMakeFiles/overriding_node.dir/src/BlackCore.cpp.o
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vspid_node.dir/build.make controls/CMakeFiles/vspid_node.dir/src/BlackCore.cpp.o
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vxpid_node.dir/build.make controls/CMakeFiles/vxpid_node.dir/src/BlackCore.cpp.o
 .PHONY : src/BlackCore.cpp.o
 
 src/BlackCore.i: src/BlackCore.cpp.i
@@ -598,7 +598,7 @@ src/BlackCore.i: src/BlackCore.cpp.i
 # target to preprocess a source file
 src/BlackCore.cpp.i:
 	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/overriding_node.dir/build.make controls/CMakeFiles/overriding_node.dir/src/BlackCore.cpp.i
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vspid_node.dir/build.make controls/CMakeFiles/vspid_node.dir/src/BlackCore.cpp.i
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vxpid_node.dir/build.make controls/CMakeFiles/vxpid_node.dir/src/BlackCore.cpp.i
 .PHONY : src/BlackCore.cpp.i
 
 src/BlackCore.s: src/BlackCore.cpp.s
@@ -607,7 +607,7 @@ src/BlackCore.s: src/BlackCore.cpp.s
 # target to generate assembly for a file
 src/BlackCore.cpp.s:
 	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/overriding_node.dir/build.make controls/CMakeFiles/overriding_node.dir/src/BlackCore.cpp.s
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vspid_node.dir/build.make controls/CMakeFiles/vspid_node.dir/src/BlackCore.cpp.s
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vxpid_node.dir/build.make controls/CMakeFiles/vxpid_node.dir/src/BlackCore.cpp.s
 .PHONY : src/BlackCore.cpp.s
 
 src/BlackGPIO.o: src/BlackGPIO.cpp.o
@@ -640,7 +640,7 @@ src/BlackPWM.o: src/BlackPWM.cpp.o
 # target to build an object file
 src/BlackPWM.cpp.o:
 	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/overriding_node.dir/build.make controls/CMakeFiles/overriding_node.dir/src/BlackPWM.cpp.o
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vspid_node.dir/build.make controls/CMakeFiles/vspid_node.dir/src/BlackPWM.cpp.o
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vxpid_node.dir/build.make controls/CMakeFiles/vxpid_node.dir/src/BlackPWM.cpp.o
 .PHONY : src/BlackPWM.cpp.o
 
 src/BlackPWM.i: src/BlackPWM.cpp.i
@@ -649,7 +649,7 @@ src/BlackPWM.i: src/BlackPWM.cpp.i
 # target to preprocess a source file
 src/BlackPWM.cpp.i:
 	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/overriding_node.dir/build.make controls/CMakeFiles/overriding_node.dir/src/BlackPWM.cpp.i
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vspid_node.dir/build.make controls/CMakeFiles/vspid_node.dir/src/BlackPWM.cpp.i
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vxpid_node.dir/build.make controls/CMakeFiles/vxpid_node.dir/src/BlackPWM.cpp.i
 .PHONY : src/BlackPWM.cpp.i
 
 src/BlackPWM.s: src/BlackPWM.cpp.s
@@ -658,32 +658,8 @@ src/BlackPWM.s: src/BlackPWM.cpp.s
 # target to generate assembly for a file
 src/BlackPWM.cpp.s:
 	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/overriding_node.dir/build.make controls/CMakeFiles/overriding_node.dir/src/BlackPWM.cpp.s
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vspid_node.dir/build.make controls/CMakeFiles/vspid_node.dir/src/BlackPWM.cpp.s
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vxpid_node.dir/build.make controls/CMakeFiles/vxpid_node.dir/src/BlackPWM.cpp.s
 .PHONY : src/BlackPWM.cpp.s
-
-src/W_PID.o: src/W_PID.cpp.o
-.PHONY : src/W_PID.o
-
-# target to build an object file
-src/W_PID.cpp.o:
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/wpid_node.dir/build.make controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o
-.PHONY : src/W_PID.cpp.o
-
-src/W_PID.i: src/W_PID.cpp.i
-.PHONY : src/W_PID.i
-
-# target to preprocess a source file
-src/W_PID.cpp.i:
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/wpid_node.dir/build.make controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.i
-.PHONY : src/W_PID.cpp.i
-
-src/W_PID.s: src/W_PID.cpp.s
-.PHONY : src/W_PID.s
-
-# target to generate assembly for a file
-src/W_PID.cpp.s:
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/wpid_node.dir/build.make controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.s
-.PHONY : src/W_PID.cpp.s
 
 src/encoders.o: src/encoders.cpp.o
 .PHONY : src/encoders.o
@@ -781,29 +757,53 @@ src/test_encoder.cpp.s:
 	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/test_encoders.dir/build.make controls/CMakeFiles/test_encoders.dir/src/test_encoder.cpp.s
 .PHONY : src/test_encoder.cpp.s
 
-src/vs_pid.o: src/vs_pid.cpp.o
-.PHONY : src/vs_pid.o
+src/vx_pid.o: src/vx_pid.cpp.o
+.PHONY : src/vx_pid.o
 
 # target to build an object file
-src/vs_pid.cpp.o:
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vspid_node.dir/build.make controls/CMakeFiles/vspid_node.dir/src/vs_pid.cpp.o
-.PHONY : src/vs_pid.cpp.o
+src/vx_pid.cpp.o:
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vxpid_node.dir/build.make controls/CMakeFiles/vxpid_node.dir/src/vx_pid.cpp.o
+.PHONY : src/vx_pid.cpp.o
 
-src/vs_pid.i: src/vs_pid.cpp.i
-.PHONY : src/vs_pid.i
+src/vx_pid.i: src/vx_pid.cpp.i
+.PHONY : src/vx_pid.i
 
 # target to preprocess a source file
-src/vs_pid.cpp.i:
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vspid_node.dir/build.make controls/CMakeFiles/vspid_node.dir/src/vs_pid.cpp.i
-.PHONY : src/vs_pid.cpp.i
+src/vx_pid.cpp.i:
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vxpid_node.dir/build.make controls/CMakeFiles/vxpid_node.dir/src/vx_pid.cpp.i
+.PHONY : src/vx_pid.cpp.i
 
-src/vs_pid.s: src/vs_pid.cpp.s
-.PHONY : src/vs_pid.s
+src/vx_pid.s: src/vx_pid.cpp.s
+.PHONY : src/vx_pid.s
 
 # target to generate assembly for a file
-src/vs_pid.cpp.s:
-	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vspid_node.dir/build.make controls/CMakeFiles/vspid_node.dir/src/vs_pid.cpp.s
-.PHONY : src/vs_pid.cpp.s
+src/vx_pid.cpp.s:
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/vxpid_node.dir/build.make controls/CMakeFiles/vxpid_node.dir/src/vx_pid.cpp.s
+.PHONY : src/vx_pid.cpp.s
+
+src/w_pid.o: src/w_pid.cpp.o
+.PHONY : src/w_pid.o
+
+# target to build an object file
+src/w_pid.cpp.o:
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/wpid_node.dir/build.make controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o
+.PHONY : src/w_pid.cpp.o
+
+src/w_pid.i: src/w_pid.cpp.i
+.PHONY : src/w_pid.i
+
+# target to preprocess a source file
+src/w_pid.cpp.i:
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/wpid_node.dir/build.make controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.i
+.PHONY : src/w_pid.cpp.i
+
+src/w_pid.s: src/w_pid.cpp.s
+.PHONY : src/w_pid.s
+
+# target to generate assembly for a file
+src/w_pid.cpp.s:
+	cd /home/debian/controls_on_beagle_bone/main_controls/build && $(MAKE) -f controls/CMakeFiles/wpid_node.dir/build.make controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.s
+.PHONY : src/w_pid.cpp.s
 
 # Help Target
 help:
@@ -847,7 +847,7 @@ help:
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
 	@echo "... test_encoders"
-	@echo "... vspid_node"
+	@echo "... vxpid_node"
 	@echo "... wpid_node"
 	@echo "... src/BlackCore.o"
 	@echo "... src/BlackCore.i"
@@ -858,9 +858,6 @@ help:
 	@echo "... src/BlackPWM.o"
 	@echo "... src/BlackPWM.i"
 	@echo "... src/BlackPWM.s"
-	@echo "... src/W_PID.o"
-	@echo "... src/W_PID.i"
-	@echo "... src/W_PID.s"
 	@echo "... src/encoders.o"
 	@echo "... src/encoders.i"
 	@echo "... src/encoders.s"
@@ -873,9 +870,12 @@ help:
 	@echo "... src/test_encoder.o"
 	@echo "... src/test_encoder.i"
 	@echo "... src/test_encoder.s"
-	@echo "... src/vs_pid.o"
-	@echo "... src/vs_pid.i"
-	@echo "... src/vs_pid.s"
+	@echo "... src/vx_pid.o"
+	@echo "... src/vx_pid.i"
+	@echo "... src/vx_pid.s"
+	@echo "... src/w_pid.o"
+	@echo "... src/w_pid.i"
+	@echo "... src/w_pid.s"
 .PHONY : help
 
 

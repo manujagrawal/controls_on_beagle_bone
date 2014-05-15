@@ -605,17 +605,17 @@ test_encoders/fast:
 .PHONY : test_encoders/fast
 
 #=============================================================================
-# Target rules for targets named vspid_node
+# Target rules for targets named vxpid_node
 
 # Build rule for target.
-vspid_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vspid_node
-.PHONY : vspid_node
+vxpid_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vxpid_node
+.PHONY : vxpid_node
 
 # fast build rule for target.
-vspid_node/fast:
-	$(MAKE) -f controls/CMakeFiles/vspid_node.dir/build.make controls/CMakeFiles/vspid_node.dir/build
-.PHONY : vspid_node/fast
+vxpid_node/fast:
+	$(MAKE) -f controls/CMakeFiles/vxpid_node.dir/build.make controls/CMakeFiles/vxpid_node.dir/build
+.PHONY : vxpid_node/fast
 
 #=============================================================================
 # Target rules for targets named wpid_node
@@ -678,7 +678,7 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test_encoders"
-	@echo "... vspid_node"
+	@echo "... vxpid_node"
 	@echo "... wpid_node"
 .PHONY : help
 

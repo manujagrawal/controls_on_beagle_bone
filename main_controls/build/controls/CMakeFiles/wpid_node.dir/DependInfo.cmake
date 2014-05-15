@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/W_PID.cpp" "/home/debian/controls_on_beagle_bone/main_controls/build/controls/CMakeFiles/wpid_node.dir/src/W_PID.cpp.o"
+  "/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/w_pid.cpp" "/home/debian/controls_on_beagle_bone/main_controls/build/controls/CMakeFiles/wpid_node.dir/src/w_pid.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,10 +22,11 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/home/debian/controls_on_beagle_bone/main_controls/devel/include"
-  "/home/debian/controls_on_beagle_bone/support_ws/src/diagnostic_updater/include"
   "/opt/ros/indigo/include"
   "/home/debian/ros_catkin_ws/install_isolated/include"
   "/usr/local/include"
+  "/home/debian/controls_on_beagle_bone/support_ws/src/diagnostic_updater/include"
+  "/home/debian/controls_on_beagle_bone/main_controls/src/controls/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

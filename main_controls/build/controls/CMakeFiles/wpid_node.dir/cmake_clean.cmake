@@ -1,5 +1,5 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/wpid_node.dir/src/W_PID.cpp.o"
+  "CMakeFiles/wpid_node.dir/src/w_pid.cpp.o"
   "/home/debian/controls_on_beagle_bone/main_controls/devel/lib/controls/wpid_node.pdb"
   "/home/debian/controls_on_beagle_bone/main_controls/devel/lib/controls/wpid_node"
 )

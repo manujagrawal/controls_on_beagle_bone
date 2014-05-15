@@ -33,5 +33,5 @@
 /home/debian/controls_on_beagle_bone/main_controls/build/controls/CMakeFiles/std_msgs_generate_messages_py.dir
 /home/debian/controls_on_beagle_bone/main_controls/build/controls/CMakeFiles/test_encoders.dir
 /home/debian/controls_on_beagle_bone/main_controls/build/CMakeFiles/tests.dir
-/home/debian/controls_on_beagle_bone/main_controls/build/controls/CMakeFiles/vspid_node.dir
+/home/debian/controls_on_beagle_bone/main_controls/build/controls/CMakeFiles/vxpid_node.dir
 /home/debian/controls_on_beagle_bone/main_controls/build/controls/CMakeFiles/wpid_node.dir

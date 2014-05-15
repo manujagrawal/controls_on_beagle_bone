@@ -34,26 +34,6 @@ controls/encoder_msg.h
 iostream
 -
 
-/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/eqep.cpp
-eqep.h
-/home/debian/controls_on_beagle_bone/main_controls/src/controls/src/eqep.h
-cstdint
--
-cstdlib
--
-cstdio
--
-unistd.h
--
-fcntl.h
--
-poll.h
--
-sys/types.h
--
-sys/stat.h
--
-
 /home/debian/controls_on_beagle_bone/main_controls/src/controls/src/eqep.h
 iostream
 -
